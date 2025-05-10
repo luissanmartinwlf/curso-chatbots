@@ -22,7 +22,7 @@ else ifeq ($(OS_NAME),Darwin)
 else ifeq ($(OS_NAME),Windows)
 	@echo "Detected Windows OS"
 	powershell -ExecutionPolicy Bypass -Command "irm https://astral.sh/uv/install.ps1 | iex"
-	# "If you are on Windows and this doesn't work, check your permissions or run the command manually."
+	@echo "If you are on Windows and this doesn't work, check your permissions or run the command manually."
 endif
 
 # Create a virtual environment
